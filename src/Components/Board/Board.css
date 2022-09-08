@@ -1,0 +1,27 @@
+.container-board{    
+    display: grid;
+    grid-template-columns: repeat(4, minmax(140px, 1fr));    
+    /* grid-template-columns: repeat(4, 140px); */
+    
+    grid-gap: 10px;
+    margin: 10px 20px;    
+/* border: 1px solid blue; */
+}
+
+.easy{  
+    grid-template-columns: repeat(4, minmax(140px, 1fr));        
+}
+
+.medium{  
+    grid-template-columns: repeat(7, minmax(140px, 1fr));
+}
+
+.hard{  
+    grid-template-columns: repeat(9, minmax(115px, 1fr));
+/* margin: 30px 0; */
+/* border: 1px solid blue; */
+}
+
+.expert{  
+    grid-template-columns: repeat(10, minmax(105px, 1fr));    
+}

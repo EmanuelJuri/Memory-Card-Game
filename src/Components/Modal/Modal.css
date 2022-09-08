@@ -1,0 +1,35 @@
+.MuiDialog-root{
+    /* background-color: lightcoral; */
+    margin-left: 175px;
+}
+
+
+.btn-modal{
+    background: linear-gradient(90deg, #457FCA 0%, #5691C8 100%);
+    margin-left: 25px;
+    cursor: pointer;
+    padding: 2px 0;
+    width: 100px;
+    border-radius: 15px;
+    border: none;
+    font-size: 15px;
+}
+
+.btn-modal:hover{
+    /* color: white; */
+    background: #92F183;
+}
+
+.choise-group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 20px;
+    /* border: 1px solid green; */
+}
+
+.modal-img:hover{
+    background: 'rgba(0, 0, 0, 0.2)',
+
+    /* border: 1px solid green; */
+}

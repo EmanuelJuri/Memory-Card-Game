@@ -1,0 +1,62 @@
+*{   
+    margin: 0;
+}
+
+.container-about{
+    background-image: url('/src/assets/cover.svg');
+    height: 100vh;
+    text-align: center;
+}
+
+.card-about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid blue; */
+}
+
+.title-group{
+    /* border: 1px solid red; */
+}
+
+.title-hi{
+    margin: 15px 0;
+    font-size: 50px;
+}
+
+.title-name{
+    margin: 15px 0;
+    font-size: 40px;
+}
+
+.about-pa{
+    margin: 15px 0;
+    max-width: 500px;
+}
+
+.social-media{
+    margin: 15px;    
+    /* border: 1px solid green; */
+}
+
+.logosSocialMedia{
+    margin: 0 25px;    
+}
+
+.button-home{
+    margin: 20px;
+    font-size: 25px;
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+    background-color: darkorchid;
+    color: white;
+    transition: .6s;
+    /* transform-style: preserve-3d; */
+}
+
+.button-home:hover{
+    background-color: dodgerblue;
+    color: black;
+    transform: scale(1.05)
+}

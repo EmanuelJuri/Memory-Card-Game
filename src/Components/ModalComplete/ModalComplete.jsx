@@ -18,7 +18,7 @@ export default function AlertDialog({setTries, size, setSize, aux, setOpen}) {
       if(aux === true){
         setTimeout(()=>{
             setOpenC(true);
-        },1500)
+        },1200)
       }
   }, [aux])        
   
@@ -57,7 +57,7 @@ export default function AlertDialog({setTries, size, setSize, aux, setOpen}) {
         }}
       >
         <DialogTitle id="alert-dialog-title">
-          {"Has finalizado el juego"}
+          {"Felicitaciones lo has finalizado"}
         </DialogTitle>
         <DialogContent>
           <div id="alert-dialog-description">

@@ -12,7 +12,7 @@ export default function DeckCard({size, setShuffledEmojiList, choice}){
     let index = 0;
     if(choice === 'pokemor') index = 0
     if(choice === 'animals') index = 4
-    if(choice === 'animals2') index = 8
+    if(choice === 'tools') index = 8
 
     let shuffledEmojiList =[]
     if(!size || size === 'easy'){

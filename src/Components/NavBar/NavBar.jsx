@@ -42,8 +42,8 @@ export default function NavBar({tries, size, setSize, setTries, choice, setChoic
                 <p className='text-choiced'>{choice}</p>
             </div>
             <div className="buttons-img">
-                <img src={reload} alt='reload' className="reload-nb" onClick={handleReload}/>
                 <img src={choiceImg} alt='choice' className="reload-nb" onClick={handleClickOpen}/>                
+                <img src={reload} alt='reload' className="reload-nb" onClick={handleReload}/>
             </div>
         </div>
         <div className="buttons">

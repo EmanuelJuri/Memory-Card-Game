@@ -53,46 +53,42 @@ import zorro from '../../assets/animals/zorro.png'
 import mariposa from '../../assets/animals/mariposa.png'
 import tiburon from '../../assets/animals/tiburon.png'
 
-// ---<Animal2>---
-import _arana from '../../assets/animals2/arana.png'
-import _buho from '../../assets/animals2/buho.png'
-import _calamar from '../../assets/animals2/calamar.png'
-import _caracol from '../../assets/animals2/caracol.png'
-import _ciervo from '../../assets/animals2/ciervo.png'
-import _coala from '../../assets/animals2/coala.png'
-import _conejito from '../../assets/animals2/conejito.png'
-import _elefante from '../../assets/animals2/elefante.png'
-import _jirafa from '../../assets/animals2/jirafa.png'
-import _lobo from '../../assets/animals2/lobo.png'
-import _leon from '../../assets/animals2/leon.png'
-import _loro from '../../assets/animals2/loro.png'
-import _mono from '../../assets/animals2/mono.png'
-import _oso from '../../assets/animals2/oso.png'
-import _panda from '../../assets/animals2/panda.png'
-import _pajaro from '../../assets/animals2/pajaro.png'
-import _perezoso from '../../assets/animals2/perezoso.png'
-import _pescado from '../../assets/animals2/pescado.png'
-import _rana from '../../assets/animals2/rana.png'
-import _pinguino from '../../assets/animals2/pinguino.png'
-import _rinoceronte from '../../assets/animals2/rinoceronte.png'
-import _serpiente from '../../assets/animals2/serpiente.png'
-import _zorro from '../../assets/animals2/zorro.png'
-import _vaca from '../../assets/animals2/vaca.png'
-import _camaleon from '../../assets/animals2/camaleon.png'
-import _mosquito from '../../assets/animals2/mosquito.png'
+// ---<Tools>---
+import axe from '../../assets/tools/axe.png'
+import caliper from '../../assets/tools/caliper.png'
+import circularSaw from '../../assets/tools/circularSaw.png'
+import circularSawS from '../../assets/tools/circularSawS.png'
+import clamp from '../../assets/tools/clamp.png'
+import clampM from '../../assets/tools/clampM.png'
+import drill from '../../assets/tools/drill.png'
+import drillingMachine from '../../assets/tools/drillingMachine.png'
+import grinder from '../../assets/tools/grinder.png'
+import grooveJointPliers from '../../assets/tools/grooveJointPliers.png'
+import hammer from '../../assets/tools/hammer.png'
+import handSaw from '../../assets/tools/handSaw.png'
+import hydraulicBreaker from '../../assets/tools/hydraulicBreaker.png'
+import jigsaw from '../../assets/tools/jigsaw.png'
+import measureTape from '../../assets/tools/measureTape.png'
+import pipeWrench from '../../assets/tools/pipeWrench.png'
+import plierU from '../../assets/tools/plierU.png'
+import ruler from '../../assets/tools/ruler.png'
+import screwdriver from '../../assets/tools/screwdriver.png'
+import screwdriverP from '../../assets/tools/screwdriverP.png'
+import sledgehammer from '../../assets/tools/sledgehammer.png'
+import soldering from '../../assets/tools/soldering.png'
+import spanner from '../../assets/tools/spanner.png'
+import spatula from '../../assets/tools/spatula.png'
+import wrench from '../../assets/tools/wrench.png'
+import chisel from '../../assets/tools/chisel.png'
 
-// ---<Emojis>---
-const emojiList_8 = [...'🐌🐜🐝🐞🐡🐢🐸🐼']
-const emojiList_14 = [...'🍎🍊🍋🍌🍉🥬🌽🍒🥕🧄🍅🍆🥑🥔']
-const emojiList_18 = [...'🐌🐜🐝🐞🐡🐢🍋🥑🦁🐯🐶🐱🦊🐻🐼🐨🐷🐸']
-const emojiList_25 = [...'🍎🍊🍋🍌🍉🍇🍓🍒🍑🍍🥕🧄🍅🍆🥑🐌🐜🐝🐞🐡🐸🐢🐼🦁🐯']
-
+// ---<Export Function>---
 export default () => [
         easy_p, medium_p, hard_p, expert_p,
         easy_a, medium_a, hard_a, expert_a,
-        easy_a2, medium_a2, hard_a2, expert_a2,
+        easy_t, medium_t, hard_t, expert_t,
     ]
 
+// ---<Arrays of Info>---    
 const easy_p=[
     pikachu,
     bullbasaur,
@@ -115,15 +111,15 @@ const easy_a=[
     elefante
 ]
 
-const easy_a2=[
-    _leon,
-    _camaleon,
-    _oso,
-    _calamar,
-    _zorro,
-    _lobo,
-    _buho,
-    _elefante
+const easy_t=[
+    plierU,
+    hammer,
+    handSaw,
+    screwdriver,
+    circularSaw,
+    drill,
+    grinder,
+    caliper,
 ]
 
 const medium_p=[
@@ -160,21 +156,21 @@ const medium_a=[
     abeja
 ]
 
-const medium_a2=[
-    _leon,
-    _camaleon,
-    _oso,
-    _calamar,
-    _zorro,
-    _lobo,
-    _buho,
-    _elefante,
-    _ciervo,
-    _coala,
-    _conejito,
-    _jirafa,
-    _mono,
-    _pescado
+const medium_t=[
+    plierU,
+    hammer,
+    handSaw,
+    screwdriver,
+    circularSaw,
+    drill,
+    grinder,
+    caliper,
+    axe,
+    clamp,
+    measureTape,
+    spatula,
+    spanner,
+    wrench,
 ]
 
 const hard_p=[
@@ -219,25 +215,25 @@ const hard_a=[
     morsa
 ]
 
-const hard_a2=[
-    _leon,
-    _camaleon,
-    _oso,
-    _calamar,
-    _zorro,
-    _lobo,
-    _buho,
-    _elefante,
-    _ciervo,
-    _coala,
-    _conejito,
-    _jirafa,
-    _mono,
-    _pescado,
-    _serpiente,
-    _rana,
-    _vaca,
-    _panda
+const hard_t=[
+    plierU,
+    hammer,
+    handSaw,
+    screwdriver,
+    circularSaw,
+    drill,
+    grinder,
+    caliper,
+    axe,
+    clamp,
+    measureTape,
+    spatula,
+    spanner,
+    wrench,
+    screwdriverP,
+    soldering,
+    drillingMachine,
+    hydraulicBreaker
 ]
 
 const expert_p=[
@@ -296,30 +292,30 @@ const expert_a=[
     gorila
 ]
 
-const expert_a2=[
-    _leon,
-    _camaleon,
-    _oso,
-    _calamar,
-    _zorro,
-    _lobo,
-    _buho,
-    _elefante,
-    _ciervo,
-    _coala,
-    _conejito,
-    _jirafa,
-    _mono,
-    _pescado,
-    _serpiente,
-    _rana,
-    _vaca,
-    _panda,
-    _rinoceronte,
-    _loro,
-    _pinguino,
-    _pajaro,
-    _perezoso,
-    _caracol,
-    _arana
+const expert_t=[
+    plierU,
+    hammer,
+    handSaw,
+    screwdriver,
+    circularSaw,
+    drill,
+    grinder,
+    caliper,
+    axe,
+    clamp,
+    measureTape,
+    spatula,
+    spanner,
+    wrench,
+    screwdriverP,
+    soldering,
+    drillingMachine,
+    hydraulicBreaker,
+    sledgehammer,
+    circularSawS,
+    clampM,
+    grooveJointPliers,
+    jigsaw,
+    pipeWrench,
+    ruler,
 ]

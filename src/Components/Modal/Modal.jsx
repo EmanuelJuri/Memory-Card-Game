@@ -8,7 +8,7 @@ import DialogTitle from '@mui/material/DialogTitle';
 
 import pikachu from '../../assets/pokemon/pikachu.png'
 import leon from '../../assets/animals/leon.png'
-import _leon from '../../assets/animals2/leon.png'
+import plierU from '../../assets/tools/plierU.png'
 import { useEffect } from 'react';
 import './Modal.css'
 
@@ -57,11 +57,11 @@ export default function AlertDialog({open, setOpen, setChoice, setTries}) {
           </div>
           <div className='choise-group'>
             <img src={leon} alt="leon" width='100px' heigth='100px'className='modal-img'/>
-            <button onClick={()=>handleChoice('animals')} className='btn-modal'>Animals</button>
+            <button onClick={()=>handleChoice('animals')} className='btn-modal'>Animales</button>
           </div>
           <div className='choise-group'>
-            <img src={_leon} alt="leon" width='100px' heigth='100px'className='modal-img'/>
-            <button onClick={()=>handleChoice('animals2')} className='btn-modal'>Animals2</button>
+            <img src={plierU} alt="leon" width='100px' heigth='100px'className='modal-img'/>
+            <button onClick={()=>handleChoice('tools')} className='btn-modal'>Herramientas</button>
           </div>
         </DialogContent>
       </Dialog>

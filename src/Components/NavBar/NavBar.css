@@ -19,33 +19,33 @@
 
 .central-group-nb{
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    
+    margin: 15px 0;
     /* border: 1px solid blue; */
 }
 
 .tittle-nb{
     font-family: 'Permanent Marker', cursive;
-    font-size: 40px;
+    font-size: 40px;    
     color: white;    
     -webkit-text-stroke: 2px black;
-    /* margin-bottom: 85px; */
+    
     /* border: 1px solid red; */
 }
 
 .buttons-img{
     display: flex;
-    flex-direction: column;    
-    align-items: center;
-    padding-right: 0px;
+    /* flex-direction: column;     */
+    align-items: center;    
+    /* padding: 12px 5px; */
     /* border: 1px solid red; */
 }
 
 .reload-nb{
-    max-width: 40px;
-    margin: 10px 0;    
+    max-width: 30px;
+    margin: 10px 10px;    
     /* border: 1px solid black; */
 }
 
@@ -60,8 +60,7 @@
 }
 
 .scoreBoard{
-    display: block;
-    /* margin: 0 auto; */
+    display: block;    
     text-align: center;
     position: relative;    
     /* border: 1px solid darkmagenta; */
@@ -105,7 +104,7 @@
 .btn-3:hover,
 .btn-4:hover{
     color: dodgerblue;
-    filter: brightness(1.25);
+    /* filter: brightness(1.25); */
     box-shadow: -5px 5px 5px rgb(0, 0, 0, 0.5);
 }
 

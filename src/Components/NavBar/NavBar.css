@@ -17,6 +17,14 @@
     /* border: 1px solid black; */
 }
 
+.container-NavBar-mobile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 8px 0 8px;
+    /* border: 1px solid red; */
+}
+
 .central-group-nb{
     display: flex;
     flex-direction: column;
@@ -134,4 +142,47 @@
 
 .about-nb:hover{
     color: #92F183;
+}
+
+/* --->desketop<--- */
+@media(min-width: 481px){
+    .mobile{        
+        display: none;
+    }
+}
+
+/* --->Mobile<--- */
+@media (max-width:480px){
+    .desketop{        
+        display: none;
+    }
+    .container-NavBar{                            
+        width: 100%;    
+        padding: 0px 0px;
+        /* border: 1px solid black; */
+    }
+    .tittle-nb{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 800px){
+    .desketop{        
+        display: none;
+    }    
+}
+
+/* --->Landscape / Tablet<--- */
+@media (min-width: 481px) and (max-width: 800px){
+    .desketop{        
+        display: none;
+    }
+    .container-NavBar{                            
+        width: 100%;    
+        padding: 0px 0px;
+        /* border: 1px solid black; */
+    }
+    .tittle-nb{
+        font-size: 30px;
+    }
 }

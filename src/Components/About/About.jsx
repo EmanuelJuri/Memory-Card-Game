@@ -16,14 +16,15 @@ export default function About(){
                 </div>
                 <div>
                     <p className="about-pa">
-                    The Weather App, es una single-page application construida con React, que permite obtener el pronóstico del tiempo de cualquier ciudad.
+                    Memory Card Game, es un juego para que te diviertas y pongas a prueba tu memoria.
+                    Tiene diferentes niveles de dificultad y varias temáticas para elegir.<br/>
+                    La app esta desarrollada con React y Material UI.
                     </p>
                 </div>
                 <div className="social-media">
                     <a href="https://www.linkedin.com/in/emanuel-juri/">
                         <img src={Linkedin} alt='ln-logo' className='logosSocialMedia'/>
                     </a>
-
                     <a href="https://github.com/EmanuelJuri">
                         <img src={GitHub} alt='github-logo' className='logosSocialMedia'/>
                     </a>
@@ -31,7 +32,7 @@ export default function About(){
             </div>
             <div>
                 <Link to= '/'>
-                    <button className='button-home'>Back</button>
+                    <button className='button-home'>Volver</button>
                 </Link>
             </div>
         </div>

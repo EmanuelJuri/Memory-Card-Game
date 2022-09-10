@@ -32,6 +32,11 @@
     font-size: 55px;
 }
 
+.img-card{
+    width: 85px;
+    height: 85px;
+}
+
 .card-front{
     background: linear-gradient(90deg, #2193B0 0%, #6DD5ED 100%);
     background: linear-gradient(90deg, #457FCA 0%, #5691C8 100%);
@@ -39,7 +44,6 @@
 
 .card-flipped{
     transform: rotateY(180deg);
-
 }
 
 .card-back.easy{  
@@ -56,4 +60,26 @@
 
 .card-back.expert{  
     background-color: #FF5F5F;
+}
+
+/* --->Mobile<--- */
+@media (max-width:480px){
+    .desketop{        
+        display: none;
+    }
+    .img-card{
+        width: 65px;
+        height: 65px;
+    }
+}
+
+/* --->Landscape / Tablet<--- */
+@media (min-width: 481px) and (max-width: 800px){
+    .desketop{        
+        display: none;
+    }
+    .img-card{
+        width: 65px;
+        height: 65px;
+    }
 }

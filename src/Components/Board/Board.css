@@ -25,3 +25,39 @@
 .expert{  
     grid-template-columns: repeat(10, minmax(105px, 1fr));    
 }
+
+/* --->desketop<--- */
+@media(min-width: 481px){
+    .mobile{        
+        display: none;
+    }    
+}
+
+/* --->Mobile<--- */
+@media (max-width:480px){
+    .desketop{        
+        display: none;
+    }
+    .container-board,
+    .easy{  
+        grid-template-columns: repeat(4, minmax(80px, 1fr));        
+    }
+    
+    .medium{  
+        grid-template-columns: repeat(4, minmax(80px, 1fr));
+    }
+}
+
+/* --->Landscape / Tablet<--- */
+@media (min-width: 481px) and (max-width: 800px){
+    .desketop{        
+        display: none;
+    }
+    .easy{  
+        grid-template-columns: repeat(4, minmax(80px, 1fr));        
+    }
+    
+    .medium{  
+        grid-template-columns: repeat(4, minmax(80px, 1fr));
+    }
+}

@@ -2,3 +2,8 @@
     font-family: "Roboto","Helvetica","Arial",sans-serif;
     margin-bottom: 30px ;
 }
+
+.choise-group-complete{
+    display: flex;
+    justify-content: center;
+}

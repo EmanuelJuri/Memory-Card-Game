@@ -6,7 +6,7 @@
 
 .btn-modal{
     background: linear-gradient(90deg, #457FCA 0%, #5691C8 100%);
-    margin-left: 25px;
+    margin: 15px;
     cursor: pointer;
     padding: 2px 10px;
     min-width: 100px;
@@ -21,16 +21,52 @@
     background: #92F183;
 }
 
+.container-modal-choise{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* border: 1px solid white; */
+}
+
 .choise-group{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    /* justify-content: center; */
     align-items: center;
     margin: 10px 20px;
     /* border: 1px solid green; */
 }
 
 .modal-img:hover{
-    background: 'rgba(0, 0, 0, 0.2)',
-
+    background: 'rgba(0, 0, 0, 0.2)';
+    filter: brightness(1.15);        
     /* border: 1px solid green; */
+}
+
+/* --->desketop<--- */
+@media(min-width: 481px){
+    .mobile{        
+        display: none;
+    }
+}
+
+/* --->Mobile<--- */
+@media (max-width:480px){
+    .desketop{        
+        display: none;
+    }
+    .MuiDialog-root{
+        margin-left: 0;
+    }
+    .container-modal-choise{
+        display: flex;
+        flex-direction: column;
+    }
+    .modal-img{
+        max-width: 75%;
+    }
+    .choise-group{
+        margin: 5px;
+    }
 }

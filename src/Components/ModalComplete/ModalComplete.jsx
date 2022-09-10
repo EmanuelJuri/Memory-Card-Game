@@ -26,9 +26,9 @@ export default function AlertDialog({setTries, size, setSize, aux, setOpen}) {
         setOpenC(false);
     };
 
-    function handleReload (){        
+    function handleReload (){
         // window.location.reload();
-        setOpen(true)
+        setOpen(true);
         setOpenC(false);
     }   
 
@@ -63,7 +63,7 @@ export default function AlertDialog({setTries, size, setSize, aux, setOpen}) {
           <div id="alert-dialog-description">
             ¿Deseas volver a jugar este nivel o ir al próximo?
           </div>          
-          <div className='choise-group'>            
+          <div className='choise-group-complete'>            
             <button onClick={handleReload} className='btn-modal'>Recargar</button>
             <button onClick={handleSelect} className='btn-modal'>Siguiente</button>
           </div>          

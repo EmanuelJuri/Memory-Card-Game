@@ -6,9 +6,9 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 
-import pikachu from '../../assets/pokemon/pikachu.png'
-import leon from '../../assets/animals/leon.png'
-import plierU from '../../assets/tools/plierU.png'
+import pokemon from '../../assets/pokemon.svg'
+import animals from '../../assets/animals.svg'
+import tools from '../../assets/tools.svg'
 import { useEffect } from 'react';
 import './Modal.css'
 
@@ -37,6 +37,8 @@ export default function AlertDialog({open, setOpen, setChoice, setTries}) {
         onClose={handleClose}
         aria-labelledby="alert-dialog-title"
         aria-describedby="alert-dialog-description"
+        fullWidth={true}
+        maxWidth='sm'
         PaperProps={{
           style: {
             background: 'rgba(0, 0, 0, 0.6)',
@@ -51,17 +53,19 @@ export default function AlertDialog({open, setOpen, setChoice, setTries}) {
         <DialogContent>
           <DialogContentText id="alert-dialog-description">            
           </DialogContentText>
-          <div className='choise-group'>
-            <img src={pikachu} alt="pika" width='100px' heigth='100px'className='modal-img'/>
-            <button onClick={()=>handleChoice('pokemon')} className='btn-modal'>Pokemon</button>
-          </div>
-          <div className='choise-group'>
-            <img src={leon} alt="leon" width='100px' heigth='100px'className='modal-img'/>
-            <button onClick={()=>handleChoice('animals')} className='btn-modal'>Animales</button>
-          </div>
-          <div className='choise-group'>
-            <img src={plierU} alt="leon" width='100px' heigth='100px'className='modal-img'/>
-            <button onClick={()=>handleChoice('tools')} className='btn-modal'>Herramientas</button>
+          <div className='container-modal-choise'>
+            <div className='choise-group'>
+              <img src={pokemon} alt="pika" width='150px' heigth='150px'className='modal-img'/>
+              <button onClick={()=>handleChoice('pokemon')} className='btn-modal'>Pokemon</button>
+            </div>
+            <div className='choise-group'>
+              <img src={animals} alt="leon" width='150px' heigth='150px'className='modal-img'/>
+              <button onClick={()=>handleChoice('animals')} className='btn-modal'>Animales</button>
+            </div>
+            <div className='choise-group'>
+              <img src={tools} alt="leon" width='150px' heigth='150px'className='modal-img'/>
+              <button onClick={()=>handleChoice('tools')} className='btn-modal'>Herramientas</button>
+            </div>
           </div>
         </DialogContent>
       </Dialog>

@@ -59,15 +59,17 @@ export default function App() {
   return (
     <div className="App">
       <div className='container'>
-        <NavBar
-          tries={tries}
-          setTries={setTries}
-          setSize={setSize}
-          choice={choice}
-          setChoice={setChoice}
-          open={open}
-          setOpen={setOpen}
-        />
+        <div className='navBar'>
+          <NavBar
+            tries={tries}
+            setTries={setTries}
+            setSize={setSize}
+            choice={choice}
+            setChoice={setChoice}
+            open={open}
+            setOpen={setOpen}
+          />
+        </div>
         <div className="board">
           <Board 
             cards={shuffledCard}

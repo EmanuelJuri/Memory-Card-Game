@@ -11,8 +11,6 @@ export default function App() {
   const [shuffledEmojiList, setShuffledEmojiList] = useState(null)
   //state de cartas a renderizar
   const [shuffledCard, setShuffledCard] = useState([])
-// console.log('shuffledCard', shuffledCard)
-
   const [selectedCard, setSelectedCard] = useState(null)
   const [animating, setAnimating] = useState(false)
   //estados auxiliares
@@ -29,11 +27,13 @@ export default function App() {
       flipped: false
     })))
   },[shuffledEmojiList])  
-  
+
+  //Aux ModalComplete
   let count = shuffledCard?.filter(el=> el.flipped === true).length;
   let aux = false;   
   if(shuffledCard?.length === count && count > 0) aux= true;
   
+  //Function Click
   function handleClick(card){
     setTries(tries+1)
     const flippedCard = {...card, flipped: true}
@@ -68,6 +68,8 @@ export default function App() {
             setChoice={setChoice}
             open={open}
             setOpen={setOpen}
+            shuffledCard={shuffledCard}
+            setShuffledCard={setShuffledCard}
           />
         </div>
         <div className="board">
@@ -88,6 +90,8 @@ export default function App() {
             size={size}
             aux={aux}
             setOpen={setOpen}
+            shuffledCard={shuffledCard}
+            setShuffledCard={setShuffledCard}
           />
         </div>
       </div>

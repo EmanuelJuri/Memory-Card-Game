@@ -1,11 +1,8 @@
 .container-board{    
     display: grid;
-    grid-template-columns: repeat(4, minmax(140px, 1fr));    
-    /* grid-template-columns: repeat(4, 140px); */
-    
+    grid-template-columns: repeat(4, minmax(140px, 1fr));
     grid-gap: 10px;
-    margin: 10px 20px;    
-/* border: 1px solid blue; */
+    margin: 10px 20px;
 }
 
 .easy{  
@@ -18,8 +15,6 @@
 
 .hard{  
     grid-template-columns: repeat(9, minmax(115px, 1fr));
-/* margin: 30px 0; */
-/* border: 1px solid blue; */
 }
 
 .expert{  
@@ -39,12 +34,14 @@
         display: none;
     }
     .container-board,
+    .medium,
+    .hard,
     .easy{  
         grid-template-columns: repeat(4, minmax(80px, 1fr));        
     }
-    
-    .medium{  
-        grid-template-columns: repeat(4, minmax(80px, 1fr));
+
+    .hard{  
+        grid-template-columns: repeat(4, minmax(65px, 1fr));
     }
 }
 
@@ -53,11 +50,18 @@
     .desketop{        
         display: none;
     }
+    .container-board,
     .easy{  
-        grid-template-columns: repeat(4, minmax(80px, 1fr));        
+        grid-template-columns: repeat(4, minmax(100px, 1fr));        
     }
-    
     .medium{  
-        grid-template-columns: repeat(4, minmax(80px, 1fr));
+        grid-template-columns: repeat(7, minmax(100px, 1fr));
+    }
+
+    .hard{  
+        grid-template-columns: repeat(9, minmax(70px, 1fr));
+    }
+    .expert{  
+        grid-template-columns: repeat(10, minmax(65px, 1fr));
     }
 }

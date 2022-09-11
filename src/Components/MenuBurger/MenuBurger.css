@@ -1,13 +1,8 @@
-.container-menu{
-    /* position: relative; */
-    /* margin-bottom: 30%; */
-}
-
 /* ---<menu burger>--- */
 .container-burger{    
     position: relative;
     z-index: 30;
-    /* border: 1px solid red; */
+    padding: 0 15px 0 0;
 }
 
 .menu-links{
@@ -15,10 +10,9 @@
     top: -700px;
     left: -2000px;
     right: 0;
-    margin: 0 auto;
+    margin: 0 auto;    
     text-align: center;
     transition: all .5s ease;
-    /* border: 1px solid blue; */
 }
 
 .menu-links a{
@@ -45,6 +39,24 @@
     margin: 20px;
 }
 
+.img-reload-menu{
+    margin: 100px 0 45px 0;
+    max-width: 18%;
+}
+
+.btn-1.menu-hamburger,
+.btn-2.menu-hamburger,
+.btn-3.menu-hamburger{
+    font-size: 22px;
+    width: 150px;
+    border-radius: 25px;
+    margin: 20px;
+}
+
+.about-menu-burger{
+    padding: 50px 0 0 0;    
+}
+
 /* ---<div background>--- */
 .initial{
     position: absolute;    
@@ -58,11 +70,9 @@
 }
 
 .initial.active{
-    border-radius: 0 0 0 80%;
     top: 0;
     left: 0;    
     width: 100%;
-    /* height: 100%;     */
     height: 100vh;    
 }
 
@@ -120,19 +130,13 @@
     top: 13px;
 }
 
-/* --->desketop<--- */
-@media(min-width: 481px){
-    .mobile{        
+/* --->Landscape / Tablet<--- */
+@media (min-width: 481px) and (max-width: 800px){
+    .desketop{        
         display: none;
     }
-    .menu-links{
-        position: initial;       
-        display: block;
-    }
-    .menu-links a{
-        display: inline;
-        text-decoration: none;
-        padding: 0 25px;
-        color: black;     
-    }
+    .img-reload-menu{
+        margin: 100px 0 45px 0;
+        max-width: 10%;
+    }    
 }

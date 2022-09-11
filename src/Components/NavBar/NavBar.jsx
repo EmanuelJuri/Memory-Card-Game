@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import { Link } from "react-router-dom";
 
 import './NavBar.css'
@@ -8,18 +8,16 @@ import choiceImg from '../../assets/choice.svg'
 import Modal from '../Modal/Modal';
 import MenuBurger from '../MenuBurger/MenuBurger';
 
-export default function NavBar({tries, size, setSize, setTries, choice, setChoice, open, setOpen}){
-    // const [clicked, setClicked] = (useState(false))
-
-    // function handleClick (){
-    //     setClicked(!clicked)        
-    // }
+export default function NavBar({tries, size, setSize, setTries, choice, setChoice, open, setOpen, shuffledCard, setShuffledCard}){
 
     function handleReload (){        
         window.location.reload();
     }    
     
     function handleSelect(str){
+        setShuffledCard(shuffledCard.forEach(el => {
+            el.flipped=false;
+          }));  
         setSize(str)
         setTries(0)
     }
@@ -31,15 +29,13 @@ export default function NavBar({tries, size, setSize, setTries, choice, setChoic
     const triesRound = Math.floor(tries/2);
 
     return(
-    <div className="container-NavBar">
-        
+    <div className="container-NavBar">        
         <div className="container-NavBar-mobile mobile">
             <p className="tittle-nb">Memory Card Game</p> 
             <MenuBurger
                 handleSelect={handleSelect}
             />            
-        </div>
-            
+        </div>            
         <div className='desketop'>
             <Modal
                 setChoice={setChoice}
@@ -56,8 +52,8 @@ export default function NavBar({tries, size, setSize, setTries, choice, setChoic
                     <span className="number-tries-nb">{triesRound}</span>
                     <p className='text-choiced'>{choice === 'pokemon' ? 'pokemon' :
                                                 choice === 'animals' ? 'animales' :
-                                                choice === 'tools' ? 'herramientas' : null
-                    }</p>
+                                                choice === 'tools' ? 'herramientas' : null}
+                    </p>
                 </div>
                 <div className="buttons-img">
                     <img src={choiceImg} alt='choice' className="reload-nb" onClick={handleClickOpen}/>                

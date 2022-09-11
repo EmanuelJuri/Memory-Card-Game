@@ -23,11 +23,6 @@
     padding: 0 12px;
     backdrop-filter: contrast(.8);     
     border-radius: 25px;
-    /* border: 1px solid blue; */    
-}
-
-.title-group{
-    /* border: 1px solid red; */
 }
 
 .title-hi{
@@ -45,14 +40,12 @@
 }
 
 .about-pa{
-    /* font-family: "Roboto","Helvetica","Arial",sans-serif; */
     margin: 15px 0;
     max-width: 500px;
 }
 
 .social-media{
     margin: 15px;    
-    /* border: 1px solid green; */
 }
 
 .logosSocialMedia{
@@ -68,23 +61,13 @@
     border: none;
     color: white;
     transition: .3s;
-    cursor:pointer;
-
-    
+    cursor:pointer;   
 }
 
 .button-home:hover{
     background: #FCFF76;    
     color: black;
     transform: scale(1.05)
-}
-
-
-/* --->desketop<--- */
-@media(min-width: 481px){
-    .mobile{        
-        display: none;
-    }
 }
 
 /* --->Mobile<--- */

@@ -7,7 +7,9 @@ export default function Card ({card, animating, handleClick, size}){
         <div className="container-card" onClick={()=>(!card.flipped && !animating) && handleClick(card)}>
             <div className={`card-inner ${card.flipped && 'card-flipped'}`}>
                 <div className="card-front"></div>                
-                <div className={`card-back ${size}`}><img src={card.emoji} alt='img-card' className="img-card"/></div>
+                <div className={`card-back ${size}`}><img src={card.emoji} alt='img-card'
+                    className={size === 'hard' || size === 'expert' ? "img-card hard-mobile" : "img-card"}
+                /></div>
             </div>
         </div>
     )

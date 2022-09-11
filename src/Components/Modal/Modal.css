@@ -1,5 +1,4 @@
-.MuiDialog-root{
-    /* background-color: lightcoral; */
+.MuiDialog-root{    
     margin-left: 175px;
 }
 
@@ -17,7 +16,6 @@
 }
 
 .btn-modal:hover{
-    /* color: white; */
     background: #92F183;
 }
 
@@ -25,23 +23,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
-    /* border: 1px solid white; */
 }
 
 .choise-group{
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     margin: 10px 20px;
-    /* border: 1px solid green; */
 }
 
 .modal-img:hover{
     background: 'rgba(0, 0, 0, 0.2)';
-    filter: brightness(1.15);        
-    /* border: 1px solid green; */
+    filter: brightness(1.15);
 }
 
 /* --->desketop<--- */
@@ -68,5 +61,15 @@
     }
     .choise-group{
         margin: 5px;
+    }
+}
+
+/* --->Landscape / Tablet<--- */
+@media (min-width: 481px) and (max-width: 800px){
+    .desketop{        
+        display: none;
+    }
+    .MuiDialog-root{
+        margin-left: 0;
     }
 }

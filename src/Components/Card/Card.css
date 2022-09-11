@@ -37,8 +37,7 @@
     height: 85px;
 }
 
-.card-front{
-    background: linear-gradient(90deg, #2193B0 0%, #6DD5ED 100%);
+.card-front{    
     background: linear-gradient(90deg, #457FCA 0%, #5691C8 100%);
 }
 
@@ -71,6 +70,10 @@
         width: 65px;
         height: 65px;
     }
+    .img-card.hard-mobile{
+        width: 55px;
+        height: 55px;
+    }
 }
 
 /* --->Landscape / Tablet<--- */
@@ -81,5 +84,9 @@
     .img-card{
         width: 65px;
         height: 65px;
+    }
+    .img-card.hard-mobile{
+        width: 55px;
+        height: 55px;
     }
 }

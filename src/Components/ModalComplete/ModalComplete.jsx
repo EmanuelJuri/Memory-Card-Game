@@ -1,39 +1,34 @@
 import React,{ useEffect, useState } from 'react';
-import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
-import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
-import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 
 import './ModalComplete.css'
 
-export default function AlertDialog({setTries, size, setSize, aux, setOpen}) {
+export default function AlertDialog({setTries, size, setSize, aux, setOpen, shuffledCard, setShuffledCard}) {
   const [openC, setOpenC] = useState(false);
-
-  console.log('aux MODAL', aux)
-  console.log('size#', size?size:'nada')
 
   useEffect(()=>{
       if(aux === true){
         setTimeout(()=>{
-            setOpenC(true);
+          setOpenC(true);
         },1200)
       }
   }, [aux])        
   
-    const handleClose = () => {
-        setOpenC(false);
-    };
+  const handleClose = () => {
+    setOpenC(false);
+  };
 
-    function handleReload (){
-        // window.location.reload();
-        setOpen(true);
-        setOpenC(false);
-    }   
+  function handleReload (){
+    setOpen(true);
+    setOpenC(false);
+  }   
 
   function handleSelect(){
-    console.log('size', size)
+    setShuffledCard(shuffledCard.forEach(el => {
+      el.flipped=false;
+    }));        
     if(size === 'easy') setSize('medium')
     if(size === 'medium') setSize('hard')
     if(size === 'hard') setSize('expert')
@@ -65,7 +60,9 @@ export default function AlertDialog({setTries, size, setSize, aux, setOpen}) {
           </div>          
           <div className='choise-group-complete'>            
             <button onClick={handleReload} className='btn-modal'>Recargar</button>
-            <button onClick={handleSelect} className='btn-modal'>Siguiente</button>
+            <button onClick={handleSelect} 
+              className={size === 'hard' ? "btn-modal hard-mobile" : "btn-modal"}
+            >Siguiente</button>
           </div>          
         </DialogContent>
       </Dialog>

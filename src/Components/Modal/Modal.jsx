@@ -1,7 +1,5 @@
 import * as React from 'react';
-import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
-import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
@@ -13,8 +11,6 @@ import { useEffect } from 'react';
 import './Modal.css'
 
 export default function AlertDialog({open, setOpen, setChoice, setTries}) {
-//   const [open, setOpen] = React.useState(false);
-//   const [choice, setChoice] = React.useState('')
 
   useEffect(()=>{
     setOpen(true);

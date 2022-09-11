@@ -7,3 +7,7 @@
     display: flex;
     justify-content: center;
 }
+
+.btn-modal.hard-mobile{
+    display: none;
+}

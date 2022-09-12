@@ -8,6 +8,12 @@
     justify-content: center;
 }
 
-.btn-modal.hard-mobile{
-    display: none;
+/* --->Mobile<--- */
+@media (max-width:480px){
+    .desketop{        
+        display: none;
+    }
+    .btn-modal.hard-mobile{
+        display: none;
+    } 
 }

@@ -15,11 +15,13 @@ export default function NavBar({tries, size, setSize, setTries, choice, setChoic
     }    
     
     function handleSelect(str){
-        setShuffledCard(shuffledCard.forEach(el => {
-            el.flipped=false;
-          }));  
-        setSize(str)
-        setTries(0)
+        if(str !== size){
+            setShuffledCard(shuffledCard.forEach(el => {
+                el.flipped=false;
+              }));  
+            setSize(str)
+            setTries(0)
+        }
     }
     
     const handleClickOpen = () => {
@@ -38,9 +40,7 @@ export default function NavBar({tries, size, setSize, setTries, choice, setChoic
         </div>            
         <div className='desketop'>
             <Modal
-                setChoice={setChoice}
-                size={size}
-                setSize={setSize}
+                setChoice={setChoice}                
                 open={open}
                 setOpen={setOpen}
                 setTries={setTries}

@@ -63,6 +63,7 @@ export default function App() {
           <NavBar
             tries={tries}
             setTries={setTries}
+            size={size}
             setSize={setSize}
             choice={choice}
             setChoice={setChoice}
